@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    height: 100vh;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hide{
+    display: none;
+}
+.game {
+    height: 100%;
+}
+.car,
+.enemy{
+    width: 50px;
+    height: 100px;
+    background: transparent url(./image/car.png) center / cover no-repeat;
+    position: absolute;
+    left: 125px;
+    bottom: 10px;
+}
+
+.gameArea{
+    width: 300px;
+    height: 100%;
+    display: none;
+    position: relative;
+    margin: auto;
+    background: #222;
+    overflow: hidden;
+}
+
+.line{
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: #fff;
+    left: 145px;
+}
+.start {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    z-index: 200;
+    color: tomato;
+    font-size: 1.5rem;
+    background: black;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.score,
+.level,
+.newGame,
+.pause,
+.play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 2rem 0;
+    z-index: 3;
+    font-size: 1rem;
+    color: skyblue;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.pause,
+.play,
+.pause img,
+.play img {
+    width: 60px;
+    height: 60px;
+    top: 70px;
+    left: 1680px;
+    background: #fff;
+}
+.pause,
+.play {
+    display: none;
+    cursor: pointer;
+    z-index: 0;
+}
+.pauseImg {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    display: none;
+    top: 180px;
+    left: 660px;
+    z-index: 2;
+}
+.startPage img,
+.gameOver img,
+.gameOver {
+    width: 100%;
+    height: 100%;
+}
+.gameOver img {
+    position: absolute;
+    top: 150px;
+}
+.gameOver {
+    position: relative;
+    height: 937px;
+    overflow: hidden;
+}
+.level,
+.newGame,
+.gameOver {
+    display: none;
+}
+.newGame { 
+    top: 80px;
+    font-weight: 700;
+    color: purple;
+    cursor: pointer;
+}
+.scoresave {
+    width: 140px;
+    height: 80px;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    top: 32px;
+    left: 1060px;
+    color: green;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    background: #000;
+    text-align: center;
+}
